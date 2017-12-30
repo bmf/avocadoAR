@@ -5,7 +5,7 @@
   <title>Avocado</title>
   <meta name="description" content="A floating Avocado">
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+  <script src="https://rawgit.com/bmf/AR.js/master/aframe/build/aframe-ar.js"> </script>
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -14,7 +14,7 @@
 <!--     aframe 0.6.0 uses gltf 1.0. aframe 0.7.0 is set to use gltf 2.0-->
       <a-asset-item id="Avocado" src="Avocado.gltf"></a-asset-item>
     </a-assets>
-    <a-marker type="pattern" patternUrl="./arcode-marker.patt">
+    <a-marker preset="custom" url="pattern-marker.patt">
       <a-entity gltf-model="#Avocado" position='0 0.5 0' scale="0.1 0.1 0.1" rotation="-90 0 0"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
